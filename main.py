@@ -60,19 +60,19 @@ window.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
 flip_timer = window.after(3000, func=flip_card)
 
 canvas1 = tk.Canvas(width=800, height=526, bg=BACKGROUND_COLOR, highlightthickness=0)
-flash_card_front = tk.PhotoImage(file="~/Documents/Projects/flash_cards/images/card_front.png")
-flash_card_back = tk.PhotoImage(file="~/Documents/Projects/flash_cards/images/card_back.png")
+flash_card_front = tk.PhotoImage(file="images/card_front.png")
+flash_card_back = tk.PhotoImage(file="images/card_back.png")
 canvas1_image = canvas1.create_image(400, 263, image=flash_card_front)
 canvas1.grid(column=0, row=0, columnspan=2)
 canvas_text1 = canvas1.create_text(400, 150, text="", fill="black", font=("Arial", 40, "italic"))
 canvas_text2 = canvas1.create_text(400, 263, text="", fill="black", font=("Arial", 60, "bold"))
 
 # Buttons
-x_pic = tk.PhotoImage(file="~/Documents/Projects/flash_cards/images/wrong.png")
+x_pic = tk.PhotoImage(file="images/wrong.png")
 no_button = tk.Button(command=next_card, image=x_pic, highlightthickness=0, borderwidth=0)
 no_button.grid(column=0, row=1)
 
-check_pic = tk.PhotoImage(file="~/Documents/Projects/flash_cards/images/right.png")
+check_pic = tk.PhotoImage(file="images/right.png")
 yes_button = tk.Button(command=known_cards, image=check_pic, highlightthickness=0, borderwidth=0)
 yes_button.grid(column=1, row=1)
 
