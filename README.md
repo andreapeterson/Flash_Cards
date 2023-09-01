@@ -4,3 +4,6 @@ Built in Python with tkinter and pandas while utilizing .csv files with the goal
 
 This project showed me the best thing to do when you are stuck is take a break. I could not figure out the known_cards() function at first, 
 I was getting so frustrated so I came back at the end of the day and it came to me- I needed to call the next_card() function inside of this function and set index=False to get the correctly formatted csv that I wanted. What I was trying to do was silly when I came back and looked at it with a fresh brain. Also, the window.after() function for flipping the card after 3 seconds, this is the first time I have used this function so I also had to struggle through calling this function and then using the .after_cancel() to avoid it flipping every 3 seconds and only to start after you land on a card (at first if you spammed through, it would flip regardless until I used .after_cancel). So, these concepts were a lot to wrap my brain around but the struggle is better than just watching the solution, even if it takes twice as long.
+
+
+![flash](https://github.com/andreapeterson/Flash_Cards/assets/134665743/a36e565a-14b4-41c2-b24e-982f3eb68130)
